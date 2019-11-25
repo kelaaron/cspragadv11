@@ -16,9 +16,21 @@ func csprag(name: String, selection: Int) -> Void {
 }
 
 let selection = Int.random(in: 0 ... 20)
-csprag(name: "Zack Piell", selection: selection)
+csprag(name: "Marcus Darden", selection: selection)
 let selection2 = Int.random(in: 0 ... 20)
 csprag(name: "Aaron Kelley", selection: selection2)
 
+// Now we will recommend an album
 
+print("If you liked that song, we will generate you a new Kanye album recommendation!")
 
+let albums = ["Late Registration", "G.O.O.D Music", "My Beautiful Dark Twisted Fantasy", "Yeezus", "The Life Of Pablo", "Kids See Ghosts", "Jesus Is King", "Ye", "808s And Heartbreaks", "Graduation"]
+
+func albumrec(name: String, selection: Int) -> Void{
+  let toret = "Hello, " + name + ", Your recommended Kanye album of the day is: " + albums[selection]
+}
+
+let selection = Int.random(in: 0 ... 9)
+albumrec(name: "Marcus Darden", selection: selection)
+let selection2 = Int.random(in: 0 ... 9)
+albumrec(name: "Aaron Kelley", selection: selection2)
